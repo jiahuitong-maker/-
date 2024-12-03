@@ -1,0 +1,29 @@
+.hero-section {
+    height: 60vh; /* 横幅高度 */
+    background: url('../images/landscape.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem; /* 标题字体大小 */
+    font-family: 'Arial', sans-serif; /* 设置字体样式 */
+    font-weight: bold; /* 字体加粗 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+}
+
+.hero-section p {
+    font-size: 1.5rem; /* 副标题字体大小 */
+    font-family: 'Georgia', serif; /* 设置字体样式 */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-group a {
+    font-size: 1.2rem; /* 按钮字体大小 */
+    font-weight: bold; /* 按钮文字加粗 */
+    padding: 10px 20px;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>美丽乡村 - 首页</title>
+    <style>
+        /* 主内容区和按钮容器 */
+        .hero-section {
+            position: relative;
+            height: 60vh;
+            background: url('assets/images/landscape.jpg') no-repeat center center/cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* 房源推荐卡片区域 */
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 22%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* 按钮样式 */
+        .btn-primary {
+            padding: 5px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .card .fa-heart {
+            font-size: 1.2rem;
+            color: red;
+        }
+
+        /* 筛选条件按钮样式 */
+        .filter-btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .filter-btn {
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: 1px solid #007bff;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .filter-btn:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .filter-btn-container .active {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .filter-btn-container .active:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 横幅区域 -->
+    <div class="hero-section">
+        <div class="hero-overlay">
+            <div>
+                <h1>绿水青山绘蓝图，金山银山兴乡村</h1>
+                <p>展示乡村美景与振兴成果，让我们一起建设美好家园。</p>
+                <div class="btn-group">
+                    <a href="#about" class="btn btn-primary">了解更多</a>
+                    <a href="#join" class="btn btn-success">加入我们</a>
+                    <a href="#donate" class="btn btn-warning">捐赠支持</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 筛选条件区域 -->
+    <div class="container mt-5">
+        <h3>筛选条件</h3>
+        <div class="filter-btn-container">
+            <div class="filter-btn active">首页</div>
+            <div class="filter-btn">在线问答</div>
+            <div class="filter-btn">直播助农</div>
+            <div class="filter-btn">农业百科</div>
+            <div class="filter-btn">大美农业</div>
+            <div class="filter-btn">现代器械</div>
+        </div>
+    </div>
+
+    <!-- 房源推荐卡片区域 -->
+    <div class="container">
+        <h3 class="my-5">推荐房源</h3>
+        <div class="card-container">
+            <!-- 卡片 1 -->
+            <div class="card">
+                <img src="assets/images/house1.jpg" alt="房屋 1">
+                <div class="card-body">
+                    <h5 class="card-title">日本 Minamiboso</h5>
+                    <p class="card-text">距离你 66 公里</p>
+                    <p class="card-text">12月2日至7日</p>
+                    <p class="price">¥76,000 / 晚</p>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">查看详情</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 2 -->
+            <div class="card">
+                <img src="assets/images/house2.jpg" alt="房屋 2">
+                <div class="card-body">
+                    <h5 class="card-title">韩国 Pungak-myeon</h5>
+                    <p class="card-text">距离你 1,005 公里</p>
+                    <p class="card-text">12月1日至6日</p>
+                    <p class="price">¥37,919 / 晚</p>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">查看详情</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 3 -->
+            <div class="card">
+                <img src="assets/images/house3.jpg" alt="房屋 3">
+                <div class="card-body">
+                    <h5 class="card-title">韩国 Gyeongju</h5>
+                    <p class="card-text">距离你 940 公里</p>
+                    <p class="card-text">12月5日至10日</p>
+                    <p class="price">¥31,725 / 晚</p>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">查看详情</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 卡片 4 -->
+            <div class="card">
+                <img src="assets/images/house4.jpg" alt="房屋 4">
+                <div class="card-body">
+                    <h5 class="card-title">韩国 Gampo-eup</h5>
+                    <p class="card-text">距离你 923 公里</p>
+                    <p class="card-text">12月5日至10日</p>
+                    <p class="price">¥31,725 / 晚</p>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">查看详情</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
